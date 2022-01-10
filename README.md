@@ -83,63 +83,41 @@ An alert is created when a subscriber signs up to be notified of a product alert
 
 - tags - (optional) A string array of tags that will be added to the subscriber on the Rule platform as soon as a new alert is created. By default, the tag Rule - Waiting For Product Alert will be automatically added to the subscriber when an alert is created.
 
--  language - (optional) Needs to be ISO 639-1 formatted. If no language is passed the subscriber will default to the account language.
+-  language -(optional) Needs to be ISO 639-1 formatted. If no language is passed the subscriber will default to the account language.
 
-Example URI
-POST https://ix.rule.io/productalert/alerts
-RequestShow
-Response  201Show
-Response  400Show
-Response  400Show
-Response  500Show
-PRODUCTS  ¶
-Get productsGET/products
+
+## PRODUCTS  
+# Get products GET/products
 Retrieve a list of products with pending alerts.
 
-Example URI
-GET https://ix.rule.io/productalert/products
-Response  200Show
-Update productPUT/products
+
+# Update product PUT/products
 Updates existing products stored in the product alert database.
 
-Attributes ¶
-product_id - (required) Unique product ID of product alert.
+# Attributes:
+- product_id - (required) Unique product ID of product alert.
 
-fields - (optional) An array of custom fields that are associated with the product alert. These will be written to a subscriber when an alert is triggered, which can be used to template product-specific fields during a triggered automation. Note: If this attribute is provided it will overwrite any existing key/value pairs.
+- fields - (optional) An array of custom fields that are associated with the product alert. These will be written to a subscriber when an alert is triggered, which can be used to template product-specific fields during a triggered automation. Note: If this attribute is provided it will overwrite any existing key/value pairs.
 
-alert_tags - (optional) A string array of tags that are applied to a subscriber when an alert is triggered. Note: If this attribute is provided it will overwrite any existing alert tags.
+- alert_tags - (optional) A string array of tags that are applied to a subscriber when an alert is triggered. Note: If this attribute is provided it will overwrite any existing alert tags.
 
-stock - (optional) A numeric value of the current available stock units that are free to allocate.
+- stock - (optional) A numeric value of the current available stock units that are free to allocate.
 
-Example URI
-PUT https://ix.rule.io/productalert/products
-RequestShow
-Response  200Show
-Response  404Show
-Delete productDELETE/products
+
+# Delete product DELETE/products
 Deletes a product entry and all pending alerts for that product.
 
-Example URI
-DELETE https://ix.rule.io/productalert/products
-RequestShow
-Response  200Show
-Response  404Show
-SETTINGS  ¶
-Get alert settingsGET/settings
+## SETTINGS  
+# Get alert settings GET/settings
 Retrieve the current set of alert settings for the API key used to make the request.
 
-Example URI
-GET https://ix.rule.io/productalert/settings
-Response  200Show
-Update alert settingsPUT/settings
+
+# Update alert settings PUT/settings
 Update the alert settings for alerts created by the API key. Alert settings affect when and how triggers occur based on product inventory.
 
-Attributes ¶
-alert_min_stock - (optional) The minimum stock units needed to start triggering alerts. The default is 10.
+# Attributes:
+- alert_min_stock - (optional) The minimum stock units needed to start triggering alerts. The default is 10.
 
-alerts_per_stock - (optional) The number of alerts that are triggered for every inventory unit in stock. The default is 20.
+- alerts_per_stock - (optional) The number of alerts that are triggered for every inventory unit in stock. The default is 20.
 
-Example URI
-PUT https://ix.rule.io/productalert/settings
-RequestShow
-Response  200Show
+
