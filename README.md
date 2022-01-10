@@ -69,21 +69,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Functionality 
+# Functionality 
 ## ALERTS  
-# Create new alert POST/alerts
+### Create new alert POST/alerts
 An alert is created when a subscriber signs up to be notified of a product alert (such as a back in stock notification). Upon creation of an alert, a subscriber is added to the Rule platform. The subscriber is also added to the product that is specified by the identifier, product_id. If the product identifier is unique (i.e. no alerts have yet been created for the product), a new product will be created.
 
-Attributes ¶
-product_id - (required) Unique product ID of product alert. This should be specific enough to specify any desired variations, color, size, and distribution region.
+# Attributes:
+- product_id - (required) Unique product ID of product alert. This should be specific enough to specify any desired variations, color, size, and distribution region.
 
-email - (required without phone_number)
+- email - (required without phone_number)
 
-phone_number - (required without email)
+- phone_number - (required without email)
 
-tags - (optional) A string array of tags that will be added to the subscriber on the Rule platform as soon as a new alert is created. By default, the tag Rule - Waiting For Product Alert will be automatically added to the subscriber when an alert is created.
+- tags - (optional) A string array of tags that will be added to the subscriber on the Rule platform as soon as a new alert is created. By default, the tag Rule - Waiting For Product Alert will be automatically added to the subscriber when an alert is created.
 
-language - (optional) Needs to be ISO 639-1 formatted. If no language is passed the subscriber will default to the account language.
+-  language - (optional) Needs to be ISO 639-1 formatted. If no language is passed the subscriber will default to the account language.
 
 Example URI
 POST https://ix.rule.io/productalert/alerts
