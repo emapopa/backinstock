@@ -86,7 +86,7 @@ An alert is created when a subscriber signs up to be notified of a product alert
 -  language -(optional) Needs to be ISO 639-1 formatted. If no language is passed the subscriber will default to the account language.
 
 
-# PRODUCTS  
+## PRODUCTS  
 ## Get products GET/products
 Retrieve a list of products with pending alerts.
 
@@ -107,7 +107,7 @@ Updates existing products stored in the product alert database.
 ## Delete product DELETE/products
 Deletes a product entry and all pending alerts for that product.
 
-# SETTINGS  
+## SETTINGS  
 ## Get alert settings GET/settings
 Retrieve the current set of alert settings for the API key used to make the request.
 
