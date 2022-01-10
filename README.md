@@ -87,11 +87,11 @@ An alert is created when a subscriber signs up to be notified of a product alert
 
 
 ## PRODUCTS  
-## Get products GET/products
+### Get products GET/products
 Retrieve a list of products with pending alerts.
 
 
-## Update product PUT/products
+### Update product PUT/products
 Updates existing products stored in the product alert database.
 
 ### Attributes:
@@ -104,15 +104,15 @@ Updates existing products stored in the product alert database.
 - stock - (optional) A numeric value of the current available stock units that are free to allocate.
 
 
-## Delete product DELETE/products
+### Delete product DELETE/products
 Deletes a product entry and all pending alerts for that product.
 
 ## SETTINGS  
-## Get alert settings GET/settings
+### Get alert settings GET/settings
 Retrieve the current set of alert settings for the API key used to make the request.
 
 
-## Update alert settings PUT/settings
+### Update alert settings PUT/settings
 Update the alert settings for alerts created by the API key. Alert settings affect when and how triggers occur based on product inventory.
 
 ### Attributes:
