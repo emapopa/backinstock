@@ -67,7 +67,7 @@ Retrieve the current set of alert settings for the API key used to make the requ
 
 ### Update alert settings PUT/settings
 Update the alert settings for alerts created by the API key. Alert settings affect when and how triggers occur based on product inventory.
-<img src="/public/images/updateAlertsSettings.png" alt="My cool logo"/>
+<img src="/public/images/updateAlertSettings.png" alt="My cool logo"/>
 ### Attributes:
 - alert_min_stock - (optional) The minimum stock units needed to start triggering alerts. The default is 10.
 
