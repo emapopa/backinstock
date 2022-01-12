@@ -17,11 +17,12 @@ You will also see any lint errors in the console.
 
 
 # Functionality 
-<img src="/public/images/apikey.png" alt="My cool logo"/>
+<img src="/public/images/apiKey.png" alt="My cool logo"/>
+<img src="/public/images/home.png" alt="My cool logo"/>
 ## ALERTS  
 ### Create new alert POST/alerts
 An alert is created when a subscriber signs up to be notified of a product alert (such as a back in stock notification). Upon creation of an alert, a subscriber is added to the Rule platform. The subscriber is also added to the product that is specified by the identifier, product_id. If the product identifier is unique (i.e. no alerts have yet been created for the product), a new product will be created.
-
+<img src="/public/images/createAlert.png" alt="My cool logo"/>
 ### Attributes:
 - product_id - (required) Unique product ID of product alert. This should be specific enough to specify any desired variations, color, size, and distribution region.
 
@@ -37,11 +38,11 @@ An alert is created when a subscriber signs up to be notified of a product alert
 ## PRODUCTS  
 ### Get products GET/products
 Retrieve a list of products with pending alerts.
-
+<img src="/public/images/getProducts.png" alt="My cool logo"/>
 
 ### Update product PUT/products
 Updates existing products stored in the product alert database.
-
+<img src="/public/images/updateProducts.png" alt="My cool logo"/>
 ### Attributes:
 - product_id - (required) Unique product ID of product alert.
 
@@ -54,15 +55,16 @@ Updates existing products stored in the product alert database.
 
 ### Delete product DELETE/products
 Deletes a product entry and all pending alerts for that product.
+<img src="/public/images/deleteProducts.png" alt="My cool logo"/>
 
 ## SETTINGS  
 ### Get alert settings GET/settings
 Retrieve the current set of alert settings for the API key used to make the request.
-
+<img src="/public/images/getAlertsSettings.png" alt="My cool logo"/>
 
 ### Update alert settings PUT/settings
 Update the alert settings for alerts created by the API key. Alert settings affect when and how triggers occur based on product inventory.
-
+<img src="/public/images/updateAlertsSettings.png" alt="My cool logo"/>
 ### Attributes:
 - alert_min_stock - (optional) The minimum stock units needed to start triggering alerts. The default is 10.
 
