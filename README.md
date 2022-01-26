@@ -20,8 +20,7 @@ You will also see any lint errors in the console.
 <img src="/public/images/apiKey.png" alt="My cool logo"/>
 <<<<<<< HEAD
 <img src="/public/images/home.png" alt="My cool logo"/>
-=======
->>>>>>> 9f0e560db6ae4918187b39eac05735b8e3dd6946
+
 ## ALERTS  
 ### Create new alert POST/alerts
 An alert is created when a subscriber signs up to be notified of a product alert (such as a back in stock notification). Upon creation of an alert, a subscriber is added to the Rule platform. The subscriber is also added to the product that is specified by the identifier, product_id. If the product identifier is unique (i.e. no alerts have yet been created for the product), a new product will be created.
